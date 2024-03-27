@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Layout - Simple Login Page</title>
+</head>
+<body>
+    <div id="login">
+        <div id="header">
+            <img src="assets/logo.png" alt="Logo Vertigo">
+        </div>
+        <div id="content">
+            <div class="header">
+                <h1>Acesse a plataforma</h1>
+                <p>Faça login ou registre-se para começar a construir 
+                <br>seus projetos ainda hoje.</p>
+            </div>
+            <form id="form-group">
+                <div id="email-group">
+                    <div class="label">
+                        <label for="email">E-mail</label>
+                    </div>
+                    <div class="input">
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                    </div>
+                </div>
+                <div id="password-group">
+                    <div class="label">
+                        <label for="password">Senha</label>
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+                    <div class="input">
+                        <div id="icon" class="show" onclick="showHide()"></div>
+                        <input type="password" id="password" name="password" placeholder="Digite sua senha">
+                    </div>
+                </div>
+                <div id="button">
+                    <input type="submit" name="button" value="Entrar">
+                </div>
+                <div id="sign-up">
+                    <span>Ainda não tem uma conta? <a href="#">Inscreva-se</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="wrapper"></div>
+    <script src="script.js"></script>
+</body>
+</html>

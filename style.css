@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #F8FAFC;
+}
+
+#wrapper{
+    width: 50vw;
+    height: 100vh;
+    background: url('assets/img.png') no-repeat center/cover;
+}
+
+#login{
+    padding: 40px 112px;
+}
+
+#login #header > img{
+    width: 160px;
+    height: 54px;
+    margin-bottom: 114px;
+}
+
+#login > #content{
+    max-width: 384px;
+}
+
+#login #content > .header{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#content .header > h1{
+    font-size: 36px;
+    color: #1E293B;
+}
+
+#content .header > p{
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+#form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#form-group #password-group > .input{
+    position: relative;
+}
+
+#form-group #password-group .input > #icon{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#form-group #password-group .input > #icon.show{
+    background: url('assets/eye-off.svg');
+}
+
+#form-group #password-group .input > #icon.hide{
+    background: url('assets/eye.svg');
+}
+
+#form-group .input > input{
+    width: 100%;
+    padding: 16px 12px;
+    border-radius: 4px;
+    border: 1px solid #E2E8F0;
+    font-size: 14px;
+    outline: none;
+}
+
+#form-group .input > input:hover,
+#form-group .input > input:focus{
+    outline: 1px solid #7C3AED;
+}
+
+#form-group .input > input::placeholder{
+    color: #94A3B8;
+}
+
+#form-group .label{
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+#form-group .label > label{
+    color: #1E293B;
+}
+
+#form-group .label > a{
+    color: #7C3AED;
+    text-decoration: none;
+}
+
+#form-group .label > a:hover{
+    text-decoration: underline;
+}
+
+#form-group #button > input{
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 4px;
+    background: #7C3AED;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#form-group #button > input:hover{
+    background: #9F67FF;
+}
+
+#sign-up span > a{
+    color: #7C3AED;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#sign-up span > a:hover{
+    text-decoration: underline;
+}
